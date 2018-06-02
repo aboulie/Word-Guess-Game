@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="UCF Homework 3 Hangman">
+        <meta name="author" content="Dareen Mohamad">
+        
+        <title>Dictionary!: Hangman Game</title>
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+            <center><img src="assets/images/dictionary.png" alt="Hangman" class="center-block img-responsive" id="title"></center>
+        <div class="container"><center>
+            <h1>Dictionary!: The Hangman Game</h1>
+            
+            <div id="userStats">
+                <p>Wins: <strong><span id="numWins"></span></strong></p>
+                <p>Losses: <strong><span id="numLosses"></span></strong></p>
+            </div>
+            
+            <p>Which English Word fits?</p>
+            <p><span id="answerProgress"></span></p>
+            <br>
+            
+            <p>Number of attempts left: <strong><span id="numTriesLeft"></span></strong></p>
+            <p>Your guesses thus far:</p>
+            <p><strong><span id="guesses"></span></strong></p>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightBox_background"></div>
+
+        <div id="lightBox" class="container">
+            <p id="outputMessage"></p>
+        </div>
+
+        <center><div class="text-center">
+				<audio controls autoplay id="song">
+ 					<source src="assets/sounds/leaves.mp3" type="audio/mpeg">
+ 				</audio></div></center>
+
+        <script type="text/javascript" src="assets/javascript/wordlist.js"></script>
+        <script type="text/javascript" src="assets/javascript/game_code.js"></script>
+    </body>
+</html>
